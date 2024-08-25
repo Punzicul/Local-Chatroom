@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="screen1" id="screen1">
+        <div class="messageBox" id="roomsDiv">
+            <div class="title">ROOMS</div>
+        </div>
+        <div class="addDiv">
+            <input id="roomName" type="text" placeholder="Enter Room Name" class="inputField">
+            <button id="addRoom" class="addRoom">Add Room</button>
+        </div>
+    </div>
+    <div class="screen2" id="screen2">
+        <div class="messageBox" id="messageDiv">
+            <div class="title" id="roomTitle">ROOMS</div>
+        </div>
+        <div class="addDiv">
+            <input id="messageInput" type="text" placeholder="Enter Message" class="inputField">
+            <button id="sendMessage" class="addRoom">Send Message</button>
+            <button id="leaveRoom" class="leaveRoom">Leave Room</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

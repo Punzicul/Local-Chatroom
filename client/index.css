@@ -1,0 +1,136 @@
+.messageBox {
+    width: 25%;
+    height: 70vh;
+    background-color: rebeccapurple;
+    margin: 0 auto;
+    overflow-y: auto;
+    border: 2px solid black;
+    background-color: white;
+    text-align: center;
+
+}
+
+.screen1 {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.screen2 {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: none;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.title {
+    font-size: 50px;
+    margin-top: 0px;
+    top: 0;
+    font-weight: bold;
+    width: 100%;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    position: sticky;
+    margin-bottom: 10px;
+}
+
+.room {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1px 5px 1px 5px;
+    margin-bottom: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.joinRoom{
+    width: 25%;
+    max-width: 90px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: rgb(12, 241, 12);
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+.roomName{
+    width: 70%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 0 0 0;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.joinRoom:hover, .addRoom:hover, .leaveRoom:hover{
+    opacity: 0.5;
+}
+
+.addDiv {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    margin: 0 auto;
+}
+.inputField {
+    width: 50%;
+    margin: 0 auto;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.addRoom {
+    width: 40%;
+    margin: 0 auto;
+    height: 35px;
+    border-radius: 15px;
+    background-color: rgb(12, 241, 12);
+    font-weight: bold;
+    cursor: pointer;
+}
+.leaveRoom {
+    width: 40%;
+    margin: 0 auto;
+    height: 35px;
+    border-radius: 15px;
+    background-color: rgb(241, 12, 12);
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.myMessage {
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 20px;
+    background-color: rgb(46, 215, 28);
+    max-width: 275px;
+    padding: 10px 10px 10px 10px;   
+    border-radius: 20px;
+    overflow-y: visible;
+    word-wrap: break-word;
+    width: fit-content;
+}
+.otherMessage {
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 20px;
+    background-color: rgb(1, 207, 248);
+    max-width: 275px;
+    padding: 10px 10px 10px 10px;   
+    border-radius: 20px;
+    overflow-y: visible;
+    word-wrap: break-word;
+    width: fit-content;
+}
